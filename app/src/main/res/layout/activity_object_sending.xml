@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObjectSenderActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/MaleRadiobt"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="@string/male"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/FemaleRadiobt"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="@string/female"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RollNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/roll_no">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="20dp"
+                android:textSize="30sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/PhoneNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_no">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    android:layout_width="350dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="SaveTheDetails"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
