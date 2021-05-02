@@ -1,6 +1,6 @@
 # SendingObjects
 
-I have made an simple app which use to save the deatils of the Student.
+I have made an simple app which use to save the details of the Student.
 
 # Preview of the App
 
